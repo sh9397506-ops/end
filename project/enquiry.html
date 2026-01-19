@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiry</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Poppins:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    /* Heading */
+    .enquiry-title {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #3a2f1d;
+    }
+
+    .enquiry-intro {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 40px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    /* Form Styles */
+    .enquiry-form {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #5a4b3b;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: #bfa06f;
+    }
+
+    /* Button */
+    .btn {
+      display: inline-block;
+      background-color: #bfa06f;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #9e8350;
+    }
+
+    /* Note Text */
+    .enquiry-note {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      .enquiry-form {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section id="enquiry" class="enquiry-section">
+    <div class="container">
+      <!-- Section Heading -->
+      <h2 class="enquiry-title">Plan Your Exclusive Dining Experience</h2>
+      <p class="enquiry-intro">
+        At <strong>[Restaurant Name]</strong>, we offer more than just a meal — we create unforgettable experiences. Whether it’s a romantic dinner, a corporate event, or a private celebration, we’re here to craft the perfect occasion for you.
+      </p>
+      
+      <!-- Enquiry Form -->
+      <form class="enquiry-form" action="submit-enquiry.php" method="POST">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="requests">Special Requests</label>
+          <textarea id="requests" name="requests" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="btn">Submit Enquiry</button>
+      </form>
+
+      <p class="enquiry-note">
+        We value your privacy and will treat your information with the utmost care. Expect a response within 24 hours.
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>
